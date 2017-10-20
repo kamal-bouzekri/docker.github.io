@@ -83,6 +83,8 @@ services:
           memory: 50M
       restart_policy:
         condition: on-failure
+    volumes:
+      - .:/app
     ports:
       - "80:80"
     networks:
